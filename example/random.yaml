@@ -1,7 +1,6 @@
 in:
   type: ffaker
   rows: 10
-  threads: 2
   schema:
     - name: range
       random:
