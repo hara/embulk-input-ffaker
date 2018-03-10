@@ -28,21 +28,21 @@ in:
   type: ffaker
   rows: 100
   schema:
-  - name: street
+  - name: street # invokes FFaker::AddressUS.street_name
     module: AddressUS
     method: street_name
-  - name: createdAt
+  - name: createdAt # invokes FFaker::Time.datetime(year_range: 2)
     module: Time
     method: datetime
     parameters:
     - year_range: 2
-  - name: double1
-    random: nil # this invokes FFaker::Random.rand
-  - name: long1
+  - name: double1 # invokes FFaker::Random.rand
+    random: nil
+  - name: long1 # invokes FFaker::Random.rand(10)
     random:
-      max: 10  # this invokes FFaker::Random.rand(10)
-  - name: long2
-    random:  # this invokes FFaker::Random.rand(-10..10)
+      max: 10
+  - name: long2 # invokes FFaker::Random.rand(-10..10)
+    random:
       min: -10
       max: 10
 ```
