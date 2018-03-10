@@ -29,6 +29,12 @@ module Embulk
             end
           when 'Boolean'
             Column.new(index, name, :boolean)
+          when 'Time'
+            if column['method'] == 'between'
+              Column.new(index, name, :timestamp)
+            else
+              Column.new(index, name, :string)
+            end
           else
             Column.new(index, name, :string)
           end
