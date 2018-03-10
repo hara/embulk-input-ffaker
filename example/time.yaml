@@ -1,0 +1,13 @@
+in:
+  type: ffaker
+  rows: 10
+  threads: 2
+  schema:
+    - name: date
+      module: Time
+      method: date
+      parameters:
+        - year_range: 2
+
+out:
+  type: stdout
