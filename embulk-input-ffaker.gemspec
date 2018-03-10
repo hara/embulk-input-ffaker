@@ -4,6 +4,7 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.0"
   spec.summary       = "Fake input plugin for Embulk"
   spec.description   = "Loads records from Fake."
+  spec.authors       = ["hara"]
   spec.licenses      = ["MIT"]
   # TODO set this: spec.homepage      = "https://github.com/hara/embulk-input-ffaker"
 
