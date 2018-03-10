@@ -48,6 +48,16 @@ in:
 ```
 
 
+## Development
+
+### Run example:
+
+```
+$ embulk bundle install --path vendor/bundle
+$ embulk run -b . example/config.yaml
+```
+
+
 ## Build
 
 ```
